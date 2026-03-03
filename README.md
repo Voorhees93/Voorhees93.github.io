@@ -1,1 +1,584 @@
-# Voorhees93.github.io
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Voorhees Beats | Free Type Beats 2026</title>
+<meta name="description" content="Buy type beats by Voorhees. Lucki, Veeze, Baby Smoove type beats. MP3 Lease $35 | WAV Lease $60 | Exclusive $150">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:wght@400;700&family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --red: #ff1a1a;
+    --dark: #0a0a0a;
+    --darker: #050505;
+    --card: #111111;
+    --border: #1f1f1f;
+    --text: #e8e8e8;
+    --muted: #666;
+    --gold: #c8a96e;
+    --green: #00d632;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--darker); color: var(--text); font-family: 'Space Mono', monospace; min-height: 100vh; overflow-x: hidden; }
+  body::before { content: ''; position: fixed; inset: 0; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E"); pointer-events: none; z-index: 1000; opacity: 0.4; }
+
+  /* DEAL BANNER */
+  .deal-banner { background: var(--red); padding: 10px 0; overflow: hidden; white-space: nowrap; }
+  .deal-banner-inner { display: inline-block; animation: marquee 20s linear infinite; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; font-weight: 700; }
+  @keyframes marquee { 0% { transform: translateX(100vw); } 100% { transform: translateX(-100%); } }
+
+  /* HEADER */
+  header { border-bottom: 1px solid var(--border); padding: 0 40px; display: flex; align-items: center; justify-content: space-between; height: 70px; position: sticky; top: 0; background: rgba(5,5,5,0.97); backdrop-filter: blur(10px); z-index: 100; }
+  .logo { font-family: 'Bebas Neue', sans-serif; font-size: 28px; letter-spacing: 4px; color: var(--text); text-decoration: none; }
+  .logo span { color: var(--red); }
+  nav a { color: var(--muted); text-decoration: none; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; margin-left: 28px; transition: color 0.2s; }
+  nav a:hover { color: var(--text); }
+  .nav-buy { background: var(--red); color: #fff !important; padding: 8px 18px; }
+  .nav-buy:hover { opacity: 0.85; }
+
+  /* HERO */
+  .hero { padding: 80px 40px 60px; border-bottom: 1px solid var(--border); display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; position: relative; overflow: hidden; }
+  .hero::after { content: 'VOORHEES'; position: absolute; right: -20px; top: 50%; transform: translateY(-50%); font-family: 'Bebas Neue', sans-serif; font-size: 200px; color: rgba(255,26,26,0.03); pointer-events: none; white-space: nowrap; }
+  .hero-tag { font-size: 10px; letter-spacing: 4px; text-transform: uppercase; color: var(--red); margin-bottom: 16px; }
+  .hero h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(48px, 6vw, 88px); line-height: 0.9; letter-spacing: 2px; margin-bottom: 24px; }
+  .hero h1 em { font-style: normal; color: var(--red); }
+  .hero p { font-size: 11px; color: var(--muted); letter-spacing: 1px; line-height: 1.9; margin-bottom: 32px; max-width: 440px; }
+  .pricing-pills { display: flex; gap: 10px; flex-wrap: wrap; }
+  .pill { padding: 7px 16px; border: 1px solid var(--border); font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); }
+  .pill strong { color: var(--gold); margin-left: 6px; }
+
+  /* BEAT OF THE WEEK */
+  .botw { background: var(--card); border: 1px solid var(--border); border-left: 3px solid var(--gold); padding: 28px; }
+  .botw-label { font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; }
+  .botw-title { font-family: 'Bebas Neue', sans-serif; font-size: 36px; letter-spacing: 2px; margin-bottom: 4px; }
+  .botw-artists { font-size: 11px; color: var(--red); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 16px; }
+  .botw-meta { display: flex; gap: 16px; margin-bottom: 20px; }
+  .botw-meta span { font-size: 10px; color: var(--muted); letter-spacing: 1px; }
+  .botw-buy-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; }
+
+  /* EMAIL SECTION */
+  .email-section { background: #0d0d0d; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 48px 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+  .email-section h2 { font-family: 'Bebas Neue', sans-serif; font-size: 36px; letter-spacing: 3px; margin-bottom: 8px; }
+  .email-section h2 span { color: var(--red); }
+  .email-section p { font-size: 11px; color: var(--muted); letter-spacing: 1px; line-height: 1.8; }
+  .email-form { display: flex; }
+  .email-input { flex: 1; background: var(--card); border: 1px solid var(--border); border-right: none; color: var(--text); padding: 14px 18px; font-family: 'Space Mono', monospace; font-size: 11px; letter-spacing: 1px; outline: none; transition: border-color 0.2s; }
+  .email-input:focus { border-color: var(--red); }
+  .email-input::placeholder { color: var(--muted); }
+  .email-submit { background: var(--red); border: 1px solid var(--red); color: #fff; padding: 14px 20px; font-family: 'Bebas Neue', sans-serif; font-size: 16px; letter-spacing: 3px; cursor: pointer; transition: opacity 0.2s; white-space: nowrap; }
+  .email-submit:hover { opacity: 0.85; }
+  .email-success { display: none; font-size: 11px; color: var(--green); letter-spacing: 2px; margin-top: 12px; text-transform: uppercase; }
+
+  /* FILTERS */
+  .filters { padding: 20px 40px; border-bottom: 1px solid var(--border); display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+  .filter-label { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: var(--muted); margin-right: 4px; }
+  .filter-btn { background: none; border: 1px solid var(--border); color: var(--muted); padding: 6px 14px; font-family: 'Space Mono', monospace; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; cursor: pointer; transition: all 0.2s; }
+  .filter-btn:hover, .filter-btn.active { border-color: var(--red); color: var(--text); }
+  .sort-select { margin-left: auto; background: var(--card); border: 1px solid var(--border); color: var(--muted); padding: 6px 14px; font-family: 'Space Mono', monospace; font-size: 10px; letter-spacing: 1px; cursor: pointer; outline: none; }
+  .search-box { background: none; border: 1px solid var(--border); color: var(--text); padding: 6px 14px; font-family: 'Space Mono', monospace; font-size: 10px; letter-spacing: 1px; width: 200px; outline: none; transition: border-color 0.2s; }
+  .search-box:focus { border-color: var(--red); }
+  .search-box::placeholder { color: var(--muted); }
+
+  /* BEATS */
+  .beats-section { padding: 40px; }
+  .section-header { display: flex; align-items: baseline; gap: 16px; margin-bottom: 32px; }
+  .section-title { font-family: 'Bebas Neue', sans-serif; font-size: 32px; letter-spacing: 3px; }
+  .beat-count { font-size: 11px; color: var(--muted); letter-spacing: 2px; }
+  .beats-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1px; background: var(--border); }
+  .beat-card { background: var(--card); padding: 24px; transition: background 0.2s; position: relative; overflow: hidden; }
+  .beat-card:hover { background: #161616; }
+  .beat-card::before { content: ''; position: absolute; top: 0; left: 0; width: 3px; height: 0; background: var(--red); transition: height 0.3s; }
+  .beat-card:hover::before { height: 100%; }
+  .beat-badges { display: flex; gap: 6px; margin-bottom: 10px; min-height: 20px; }
+  .badge { font-size: 8px; letter-spacing: 2px; text-transform: uppercase; padding: 3px 8px; border: 1px solid; }
+  .badge-new { border-color: var(--red); color: var(--red); }
+  .badge-popular { border-color: var(--gold); color: var(--gold); }
+  .beat-number { font-size: 10px; color: var(--muted); letter-spacing: 2px; margin-bottom: 6px; }
+  .beat-title { font-family: 'Oswald', sans-serif; font-size: 22px; font-weight: 600; letter-spacing: 1px; margin-bottom: 4px; text-transform: uppercase; }
+  .beat-artists { font-size: 11px; color: var(--red); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 14px; }
+  .beat-meta { display: flex; gap: 14px; margin-bottom: 16px; }
+  .beat-meta span { font-size: 10px; color: var(--muted); letter-spacing: 1px; }
+  .play-row { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; }
+  .play-btn { width: 34px; height: 34px; border: 1px solid var(--border); background: none; color: var(--text); cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: all 0.2s; font-size: 11px; }
+  .play-btn:hover { border-color: var(--red); color: var(--red); }
+  .progress-bar { flex: 1; height: 2px; background: var(--border); }
+  .progress-fill { height: 100%; background: var(--red); width: 0%; }
+  .time-display { font-size: 10px; color: var(--muted); letter-spacing: 1px; white-space: nowrap; }
+  .buy-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 5px; margin-bottom: 10px; }
+  .buy-btn { padding: 9px 4px; border: 1px solid var(--border); background: none; color: var(--text); cursor: pointer; font-family: 'Space Mono', monospace; font-size: 8px; letter-spacing: 1px; text-transform: uppercase; text-align: center; text-decoration: none; display: block; transition: all 0.2s; line-height: 1.4; }
+  .buy-btn:hover { background: var(--red); border-color: var(--red); color: #fff; }
+  .buy-btn .price { display: block; font-size: 13px; font-weight: 700; color: var(--gold); margin-top: 2px; }
+  .buy-btn:hover .price { color: #fff; }
+  .yt-link { display: inline-block; font-size: 10px; color: var(--muted); letter-spacing: 1px; text-decoration: none; transition: color 0.2s; }
+  .yt-link:hover { color: var(--red); }
+  .no-results { grid-column: 1/-1; padding: 60px; text-align: center; color: var(--muted); font-size: 12px; letter-spacing: 2px; }
+
+  /* BIO */
+  .bio-section { border-top: 1px solid var(--border); padding: 60px 40px; display: grid; grid-template-columns: 1fr 2fr; gap: 60px; align-items: start; }
+  .bio-label { font-size: 10px; letter-spacing: 4px; color: var(--red); text-transform: uppercase; margin-bottom: 16px; }
+  .bio-name { font-family: 'Bebas Neue', sans-serif; font-size: 52px; letter-spacing: 3px; line-height: 0.9; margin-bottom: 24px; }
+  .bio-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .stat { border: 1px solid var(--border); padding: 16px; }
+  .stat-num { font-family: 'Bebas Neue', sans-serif; font-size: 32px; color: var(--red); letter-spacing: 2px; }
+  .stat-label { font-size: 10px; color: var(--muted); letter-spacing: 2px; text-transform: uppercase; margin-top: 4px; }
+  .bio-text { font-size: 12px; color: var(--muted); line-height: 2; letter-spacing: 0.5px; margin-bottom: 24px; }
+  .social-links { display: flex; gap: 12px; flex-wrap: wrap; }
+  .social-link { border: 1px solid var(--border); padding: 8px 18px; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); text-decoration: none; transition: all 0.2s; }
+  .social-link:hover { border-color: var(--red); color: var(--text); }
+
+  /* FAQ */
+  .faq-section { border-top: 1px solid var(--border); padding: 60px 40px; }
+  .faq-header { font-family: 'Bebas Neue', sans-serif; font-size: 40px; letter-spacing: 3px; margin-bottom: 32px; }
+  .faq-header span { color: var(--red); }
+  .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border); }
+  .faq-item { background: var(--card); padding: 24px; cursor: pointer; transition: background 0.2s; }
+  .faq-item:hover { background: #161616; }
+  .faq-q { font-size: 12px; letter-spacing: 1px; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+  .faq-toggle { color: var(--red); font-size: 16px; flex-shrink: 0; transition: transform 0.2s; }
+  .faq-item.open .faq-toggle { transform: rotate(45deg); }
+  .faq-a { font-size: 11px; color: var(--muted); letter-spacing: 0.5px; line-height: 1.9; margin-top: 12px; display: none; }
+  .faq-item.open .faq-a { display: block; }
+
+  /* TESTIMONIALS */
+  .testimonials { border-top: 1px solid var(--border); padding: 60px 40px; }
+  .testimonials h2 { font-family: 'Bebas Neue', sans-serif; font-size: 40px; letter-spacing: 3px; margin-bottom: 32px; }
+  .testimonials h2 span { color: var(--red); }
+  .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1px; background: var(--border); }
+  .testimonial { background: var(--card); padding: 24px; }
+  .stars { color: var(--gold); font-size: 12px; margin-bottom: 12px; letter-spacing: 2px; }
+  .testimonial-text { font-size: 11px; color: var(--muted); line-height: 1.9; letter-spacing: 0.5px; margin-bottom: 16px; }
+  .testimonial-author { font-size: 10px; color: var(--text); letter-spacing: 2px; text-transform: uppercase; }
+
+  /* CONTACT */
+  .contact-section { border-top: 1px solid var(--border); padding: 60px 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+  .contact-section h2 { font-family: 'Bebas Neue', sans-serif; font-size: 40px; letter-spacing: 3px; margin-bottom: 8px; }
+  .contact-section h2 span { color: var(--red); }
+  .contact-section p { font-size: 11px; color: var(--muted); letter-spacing: 1px; line-height: 1.9; margin-bottom: 24px; }
+  .contact-info { display: flex; flex-direction: column; gap: 12px; }
+  .contact-item { font-size: 11px; letter-spacing: 1px; color: var(--muted); }
+  .contact-item a { color: var(--text); text-decoration: none; transition: color 0.2s; }
+  .contact-item a:hover { color: var(--red); }
+  .contact-form { display: flex; flex-direction: column; gap: 10px; }
+  .contact-input, .contact-textarea { background: var(--card); border: 1px solid var(--border); color: var(--text); padding: 12px 16px; font-family: 'Space Mono', monospace; font-size: 11px; letter-spacing: 1px; outline: none; transition: border-color 0.2s; width: 100%; }
+  .contact-input:focus, .contact-textarea:focus { border-color: var(--red); }
+  .contact-input::placeholder, .contact-textarea::placeholder { color: var(--muted); }
+  .contact-textarea { height: 120px; resize: vertical; }
+  .contact-submit { background: var(--red); border: none; color: #fff; padding: 14px; font-family: 'Bebas Neue', sans-serif; font-size: 18px; letter-spacing: 3px; cursor: pointer; transition: opacity 0.2s; }
+  .contact-submit:hover { opacity: 0.85; }
+
+  /* MODAL */
+  .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.92); z-index: 500; align-items: center; justify-content: center; padding: 20px; }
+  .modal-overlay.open { display: flex; }
+  .modal { background: var(--card); border: 1px solid var(--border); border-top: 3px solid var(--red); padding: 40px; max-width: 460px; width: 100%; position: relative; max-height: 90vh; overflow-y: auto; }
+  .modal-close { position: absolute; top: 16px; right: 16px; background: none; border: none; color: var(--muted); cursor: pointer; font-size: 18px; transition: color 0.2s; }
+  .modal-close:hover { color: var(--red); }
+  .modal h2 { font-family: 'Bebas Neue', sans-serif; font-size: 32px; letter-spacing: 3px; margin-bottom: 4px; }
+  .modal .license-type { font-size: 10px; color: var(--red); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 20px; }
+  .modal-price { font-family: 'Bebas Neue', sans-serif; font-size: 52px; color: var(--gold); margin-bottom: 20px; letter-spacing: 2px; }
+  .license-details { border: 1px solid var(--border); padding: 16px; margin-bottom: 24px; }
+  .license-details p { font-size: 11px; color: var(--muted); letter-spacing: 0.5px; line-height: 2; }
+  .cashapp-btn { display: block; width: 100%; padding: 16px; background: var(--green); border: none; color: #000; font-family: 'Bebas Neue', sans-serif; font-size: 22px; letter-spacing: 3px; cursor: pointer; text-decoration: none; text-align: center; transition: opacity 0.2s; margin-bottom: 12px; }
+  .cashapp-btn:hover { opacity: 0.9; }
+  .modal-note { font-size: 10px; color: var(--muted); letter-spacing: 0.5px; line-height: 1.9; text-align: center; }
+  .modal-note strong { color: var(--text); }
+
+  /* POPUP */
+  .popup-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.85); z-index: 600; align-items: center; justify-content: center; padding: 20px; }
+  .popup-overlay.open { display: flex; }
+  .popup { background: var(--card); border: 1px solid var(--border); border-top: 3px solid var(--gold); padding: 40px; max-width: 420px; width: 100%; position: relative; text-align: center; }
+  .popup-close { position: absolute; top: 12px; right: 16px; background: none; border: none; color: var(--muted); cursor: pointer; font-size: 16px; }
+  .popup h3 { font-family: 'Bebas Neue', sans-serif; font-size: 36px; letter-spacing: 3px; margin-bottom: 8px; }
+  .popup h3 span { color: var(--gold); }
+  .popup p { font-size: 11px; color: var(--muted); letter-spacing: 1px; line-height: 1.8; margin-bottom: 24px; }
+
+  /* FOOTER */
+  footer { border-top: 1px solid var(--border); padding: 40px; }
+  .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+  .footer-brand p { font-size: 11px; color: var(--muted); letter-spacing: 1px; line-height: 1.9; margin-top: 12px; max-width: 320px; }
+  .footer-col h4 { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: var(--text); margin-bottom: 16px; }
+  .footer-col a { display: block; font-size: 11px; color: var(--muted); text-decoration: none; letter-spacing: 1px; margin-bottom: 8px; transition: color 0.2s; }
+  .footer-col a:hover { color: var(--red); }
+  .footer-bottom { border-top: 1px solid var(--border); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; }
+  .footer-bottom p { font-size: 10px; color: var(--muted); letter-spacing: 1px; }
+
+  @media (max-width: 768px) {
+    header { padding: 0 20px; }
+    .hero { padding: 40px 20px; grid-template-columns: 1fr; }
+    .hero::after { display: none; }
+    .email-section { padding: 40px 20px; grid-template-columns: 1fr; }
+    .filters { padding: 16px 20px; }
+    .beats-section { padding: 20px; }
+    .bio-section { padding: 40px 20px; grid-template-columns: 1fr; }
+    .faq-section { padding: 40px 20px; }
+    .faq-grid { grid-template-columns: 1fr; }
+    .testimonials { padding: 40px 20px; }
+    .contact-section { padding: 40px 20px; grid-template-columns: 1fr; }
+    .footer-top { grid-template-columns: 1fr; gap: 24px; }
+    .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
+    .search-box { width: 100%; }
+    .sort-select { margin-left: 0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="deal-banner">
+  <span class="deal-banner-inner">BUY 2 MP3 LEASES GET 1 FREE &nbsp;|&nbsp; BUY 1 WAV LEASE GET 1 FREE &nbsp;|&nbsp; BUY 3 EXCLUSIVES GET 2 FREE &nbsp;|&nbsp; NEW BEATS DAILY &nbsp;|&nbsp; EMAIL RECEIPT FOR INSTANT DELIVERY &nbsp;|&nbsp; BUY 2 MP3 LEASES GET 1 FREE &nbsp;|&nbsp; BUY 1 WAV LEASE GET 1 FREE &nbsp;|&nbsp; FREE FOR NON-PROFIT WITH CREDIT &nbsp;|&nbsp;</span>
+</div>
+
+<header>
+  <a class="logo" href="#">VOORHEES<span>.</span></a>
+  <nav>
+    <a href="#beats">Beats</a>
+    <a href="#about">About</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+    <a class="nav-buy" href="#beats">Buy Beats</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <div class="hero-tag">// Prod. Voorhees -- Est. 2017</div>
+    <h1>BUY<br><em>BEATS</em><br>DIRECT</h1>
+    <p>No middleman. No fees. Dark, hard type beats inspired by Lucki, Veeze, Baby Smoove and more. New beats uploaded daily. Pay via Cash App -- files delivered within 24 hours.</p>
+    <div class="pricing-pills">
+      <div class="pill">MP3 Lease <strong>$35</strong></div>
+      <div class="pill">WAV Lease <strong>$60</strong></div>
+      <div class="pill">Exclusive <strong>$150</strong></div>
+    </div>
+  </div>
+  <div id="botw-container"></div>
+</section>
+
+<section class="email-section">
+  <div>
+    <h2>GET A <span>FREE BEAT</span></h2>
+    <p>Drop your email and get a free MP3 lease sent to your inbox. Plus be first to know when new beats drop and get exclusive deals.</p>
+  </div>
+  <div>
+    <div class="email-form">
+      <input type="email" class="email-input" id="email-input" placeholder="your@email.com">
+      <button class="email-submit" onclick="submitEmail()">GET FREE BEAT</button>
+    </div>
+    <div class="email-success" id="email-success">Check your inbox -- beat is on the way!</div>
+  </div>
+</section>
+
+<div class="filters">
+  <span class="filter-label">Filter:</span>
+  <button class="filter-btn active" onclick="filterBeats('all', this)">All</button>
+  <button class="filter-btn" onclick="filterBeats('lucki', this)">Lucki</button>
+  <button class="filter-btn" onclick="filterBeats('veeze', this)">Veeze</button>
+  <button class="filter-btn" onclick="filterBeats('detroit', this)">Detroit</button>
+  <button class="filter-btn" onclick="filterBeats('baby money', this)">Baby Money</button>
+  <button class="filter-btn" onclick="filterBeats('baby smoove', this)">Baby Smoove</button>
+  <button class="filter-btn" onclick="filterBeats('dark', this)">Dark</button>
+  <button class="filter-btn" onclick="filterBeats('lighter', this)">Lighter</button>
+  <select class="sort-select" onchange="sortBeats(this.value)">
+    <option value="newest">Newest First</option>
+    <option value="oldest">Oldest First</option>
+    <option value="bpm-high">BPM High-Low</option>
+    <option value="bpm-low">BPM Low-High</option>
+  </select>
+  <input type="text" class="search-box" placeholder="Search beats..." oninput="searchBeats(this.value)">
+</div>
+
+<section class="beats-section" id="beats">
+  <div class="section-header">
+    <div class="section-title">Catalog</div>
+    <div class="beat-count" id="beat-count">Loading...</div>
+  </div>
+  <div class="beats-grid" id="beats-grid"></div>
+</section>
+
+<section class="bio-section" id="about">
+  <div>
+    <div class="bio-label">// The Producer</div>
+    <div class="bio-name">VOORHEES</div>
+    <div class="bio-stats">
+      <div class="stat"><div class="stat-num">9+</div><div class="stat-label">Years Producing</div></div>
+      <div class="stat"><div class="stat-num">1600+</div><div class="stat-label">Beats Made</div></div>
+      <div class="stat"><div class="stat-num">2.8K+</div><div class="stat-label">YouTube Subs</div></div>
+      <div class="stat"><div class="stat-num">Daily</div><div class="stat-label">New Uploads</div></div>
+    </div>
+  </div>
+  <div>
+    <p class="bio-text">
+      Voorhees is an independent producer from New Jersey crafting dark, hard-hitting type beats since 2017. Inspired by the sounds of Lucki, Veeze, Baby Smoove, and the Detroit underground scene, every beat is built to move -- sharp 808s, melodic samples, and cinematic atmospheres that hit different.
+      <br><br>
+      With over 1,600 beats produced and new drops every day, the catalog stays fresh. No gatekeepers, no middlemen -- buy direct and get your files fast.
+    </p>
+    <div class="social-links">
+      <a class="social-link" href="https://youtube.com/@voorhees93" target="_blank">YouTube</a>
+      <a class="social-link" href="https://instagram.com/voorheesthe13th_" target="_blank">Instagram</a>
+      <a class="social-link" href="https://soundcloud.com/voorhees93" target="_blank">SoundCloud</a>
+      <a class="social-link" href="mailto:voorheesblack93@gmail.com">Email</a>
+    </div>
+  </div>
+</section>
+
+<section class="faq-section" id="faq">
+  <div class="faq-header">LICENSING <span>FAQ</span></div>
+  <div class="faq-grid">
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">What is the difference between MP3 and WAV lease? <span class="faq-toggle">+</span></div>
+      <div class="faq-a">The MP3 lease gives you a 320kbps MP3 file, good for most releases up to 100,000 streams. The WAV lease gives you both WAV and MP3 files -- better audio quality for mixing, with higher limits up to 500,000 streams.</div>
+    </div>
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">What is an exclusive license? <span class="faq-toggle">+</span></div>
+      <div class="faq-a">An exclusive means you own the beat outright. You get WAV + MP3 + all trackout stems. The beat is removed from the store and nobody else can use it. Unlimited streams and commercial use allowed with credit.</div>
+    </div>
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">How do I receive my files after paying? <span class="faq-toggle">+</span></div>
+      <div class="faq-a">After sending payment via Cash App, email your receipt and the beat name to voorheesblack93@gmail.com. Files will be delivered to your inbox within 24 hours.</div>
+    </div>
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">Can I use beats for free? <span class="faq-toggle">+</span></div>
+      <div class="faq-a">Yes -- beats are free for non-profit use only. You must credit "Prod. Voorhees" in your title and description. If you plan to monetize anywhere, you need a lease.</div>
+    </div>
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">Do leased beats stay available to others? <span class="faq-toggle">+</span></div>
+      <div class="faq-a">Yes. With MP3 and WAV leases the beat stays available for others. Only exclusive purchases remove the beat from the catalog entirely.</div>
+    </div>
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">Can I negotiate on exclusives or get custom beats? <span class="faq-toggle">+</span></div>
+      <div class="faq-a">Yes. Email voorheesblack93@gmail.com for exclusive pricing discussions, custom beats, or bulk lease deals.</div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials">
+  <h2>WHAT ARTISTS <span>SAY</span></h2>
+  <div class="testimonials-grid">
+    <div class="testimonial">
+      <div class="stars">*****</div>
+      <div class="testimonial-text">"Hard beats, fast delivery. Got my WAV file same day. Will be coming back for more exclusives."</div>
+      <div class="testimonial-author">-- @TrapGod_Official</div>
+    </div>
+    <div class="testimonial">
+      <div class="stars">*****</div>
+      <div class="testimonial-text">"Voorhees stays consistent. Every beat is different but they all got that dark energy I need. Lucki type beats are crazy."</div>
+      <div class="testimonial-author">-- @LowkeyMuzik</div>
+    </div>
+    <div class="testimonial">
+      <div class="stars">*****</div>
+      <div class="testimonial-text">"Bought an exclusive and had my single out within a week. No issues, great communication."</div>
+      <div class="testimonial-author">-- @Chi_Silent</div>
+    </div>
+  </div>
+</section>
+
+<section class="contact-section" id="contact">
+  <div>
+    <h2>GET IN <span>TOUCH</span></h2>
+    <p>For exclusives, custom beats, bulk deals, or any questions -- reach out directly. Response within 24 hours.</p>
+    <div class="contact-info">
+      <div class="contact-item">Email: <a href="mailto:voorheesblack93@gmail.com">voorheesblack93@gmail.com</a></div>
+      <div class="contact-item">Instagram: <a href="https://instagram.com/voorheesthe13th_" target="_blank">@voorheesthe13th_</a></div>
+      <div class="contact-item">Cash App: <a href="https://cash.app/$Voorhees93" target="_blank">$Voorhees93</a></div>
+    </div>
+  </div>
+  <div>
+    <div class="contact-form">
+      <input type="text" class="contact-input" placeholder="Your name">
+      <input type="email" class="contact-input" placeholder="Your email">
+      <input type="text" class="contact-input" placeholder="Subject (e.g. Exclusive inquiry)">
+      <textarea class="contact-textarea" placeholder="Your message..."></textarea>
+      <button class="contact-submit" onclick="alert('Message sent! I will get back to you within 24 hours.')">SEND MESSAGE</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a class="logo" href="#">VOORHEES<span>.</span></a>
+      <p>Independent producer from New Jersey. Dark type beats, daily uploads, direct sales. No middleman.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Links</h4>
+      <a href="#beats">Beat Catalog</a>
+      <a href="#about">About</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Follow</h4>
+      <a href="https://youtube.com/@voorhees93" target="_blank">YouTube</a>
+      <a href="https://instagram.com/voorheesthe13th_" target="_blank">Instagram</a>
+      <a href="https://soundcloud.com/voorhees93" target="_blank">SoundCloud</a>
+      <a href="https://twitch.tv/voorhees93_" target="_blank">Twitch</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>2026 Voorhees Beats. All rights reserved.</p>
+    <p>Free for non-profit use with credit: Prod. Voorhees</p>
+  </div>
+</footer>
+
+<!-- PURCHASE MODAL -->
+<div class="modal-overlay" id="modal" onclick="closeModalOnOverlay(event)">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()">X</button>
+    <h2 id="modal-title"></h2>
+    <div class="license-type" id="modal-license"></div>
+    <div class="modal-price" id="modal-price"></div>
+    <div class="license-details"><p id="modal-terms"></p></div>
+    <a class="cashapp-btn" id="cashapp-link" href="#" target="_blank">PAY WITH CASH APP</a>
+    <p class="modal-note">After payment, email receipt + beat name to:<br><strong>voorheesblack93@gmail.com</strong><br><br>Files delivered within 24 hours.</p>
+  </div>
+</div>
+
+<!-- EMAIL POPUP -->
+<div class="popup-overlay" id="email-popup" onclick="closePopupOverlay(event)">
+  <div class="popup">
+    <button class="popup-close" onclick="closePopup()">X</button>
+    <h3>FREE <span>BEAT</span></h3>
+    <p>Drop your email and get a free MP3 lease. Plus first access to new drops and exclusive deals.</p>
+    <div class="email-form">
+      <input type="email" class="email-input" id="popup-email" placeholder="your@email.com">
+      <button class="email-submit" onclick="submitPopupEmail()">GET IT</button>
+    </div>
+    <div class="email-success" id="popup-success" style="margin-top:12px;display:none;">Check your inbox!</div>
+    <p style="font-size:9px;color:var(--muted);margin-top:12px;letter-spacing:1px;">No spam. Unsubscribe anytime.</p>
+  </div>
+</div>
+
+<script>
+const BEATS = [
+  { id: 1574, title: "Global", artists: ["Lucki", "Veeze"], key: "Bm", bpm: 140, genre: "dark", isNew: true, isPopular: false, youtube: "https://www.youtube.com/watch?v=BTab2fSAKBE", tags: ["lucki", "veeze", "detroit", "dark"] },
+  { id: 1575, title: "Scheme", artists: ["Lucki", "Veeze"], key: "Em", bpm: 150, genre: "dark", isNew: true, isPopular: false, youtube: "https://www.youtube.com/watch?v=Iy-rXUaM9ms", tags: ["lucki", "veeze", "detroit", "dark"] },
+  { id: 1576, title: "Westworld", artists: ["Lucki", "Veeze"], key: "C#m", bpm: 150, genre: "dark", isNew: true, isPopular: false, youtube: "https://www.youtube.com/watch?v=64h3izNcpj8", tags: ["lucki", "veeze", "detroit", "dark"] },
+  { id: 1577, title: "Worried Hearts", artists: ["Lucki", "Veeze"], key: "Cm", bpm: 140, genre: "lighter", isNew: true, isPopular: false, youtube: "https://www.youtube.com/watch?v=eW6ZkUIZyfk", tags: ["lucki", "veeze", "detroit", "lighter"] }
+];
+
+const LICENSE_TERMS = {
+  mp3: "MP3 LEASE - $35<br>- MP3 file (320kbps)<br>- Up to 100,000 streams<br>- Up to 50,000 downloads<br>- 1 music video allowed<br>- Must credit: Prod. Voorhees<br>- Non-exclusive",
+  wav: "WAV LEASE - $60<br>- WAV + MP3 files<br>- Up to 500,000 streams<br>- Up to 200,000 downloads<br>- Unlimited music videos<br>- Must credit: Prod. Voorhees<br>- Non-exclusive",
+  exclusive: "EXCLUSIVE RIGHTS - $150<br>- WAV + MP3 + Trackout stems<br>- Unlimited streams and downloads<br>- Full ownership transferred<br>- Beat removed from store<br>- Must credit: Prod. Voorhees"
+};
+
+const PRICES = { mp3: 35, wav: 60, exclusive: 150 };
+const LABELS = { mp3: 'MP3 Lease', wav: 'WAV Lease', exclusive: 'Exclusive Rights' };
+const CASHAPP = "$Voorhees93";
+let displayBeats = [...BEATS];
+
+function renderBeats(beats) {
+  const grid = document.getElementById('beats-grid');
+  document.getElementById('beat-count').textContent = beats.length + ' beats';
+  if (!beats.length) { grid.innerHTML = '<div class="no-results">No beats found.</div>'; return; }
+  grid.innerHTML = beats.map(beat => {
+    const badges = [];
+    if (beat.isNew) badges.push('<span class="badge badge-new">New</span>');
+    if (beat.isPopular) badges.push('<span class="badge badge-popular">Popular</span>');
+    return `<div class="beat-card">
+      <div class="beat-badges">${badges.join('')}</div>
+      <div class="beat-number">#${beat.id}</div>
+      <div class="beat-title">${beat.title}</div>
+      <div class="beat-artists">${beat.artists.join(' x ')} Type Beat</div>
+      <div class="beat-meta"><span>${beat.key}</span><span>${beat.bpm} BPM</span><span>${beat.genre === 'dark' ? 'DARK' : 'LIGHTER'}</span></div>
+      <div class="play-row">
+        <button class="play-btn" onclick="window.open('${beat.youtube}','_blank')">&#9654;</button>
+        <div class="progress-bar"><div class="progress-fill"></div></div>
+        <span class="time-display">Preview on YT</span>
+      </div>
+      <div class="buy-row">
+        <a class="buy-btn" onclick="openModal('${beat.title}','mp3','${beat.artists.join(' x ')}')">MP3<span class="price">$35</span></a>
+        <a class="buy-btn" onclick="openModal('${beat.title}','wav','${beat.artists.join(' x ')}')">WAV<span class="price">$60</span></a>
+        <a class="buy-btn" onclick="openModal('${beat.title}','exclusive','${beat.artists.join(' x ')}')">Excl.<span class="price">$150</span></a>
+      </div>
+      ${beat.youtube ? '<a class="yt-link" href="' + beat.youtube + '" target="_blank">&#9654; Watch on YouTube</a>' : ''}
+    </div>`;
+  }).join('');
+  renderBOTW();
+}
+
+function renderBOTW() {
+  const beat = BEATS[BEATS.length - 1];
+  if (!beat) return;
+  document.getElementById('botw-container').innerHTML = `<div class="botw">
+    <div class="botw-label">// Beat of the Week</div>
+    <div class="botw-title">${beat.title}</div>
+    <div class="botw-artists">${beat.artists.join(' x ')} Type Beat</div>
+    <div class="botw-meta"><span>${beat.key}</span><span>${beat.bpm} BPM</span><span>${beat.genre.toUpperCase()}</span></div>
+    <div class="botw-buy-row">
+      <a class="buy-btn" onclick="openModal('${beat.title}','mp3','${beat.artists.join(' x ')}')">MP3<span class="price">$35</span></a>
+      <a class="buy-btn" onclick="openModal('${beat.title}','wav','${beat.artists.join(' x ')}')">WAV<span class="price">$60</span></a>
+      <a class="buy-btn" onclick="openModal('${beat.title}','exclusive','${beat.artists.join(' x ')}')">Excl.<span class="price">$150</span></a>
+    </div>
+    <a class="yt-link" href="${beat.youtube}" target="_blank" style="display:block;margin-top:12px;">&#9654; Watch on YouTube</a>
+  </div>`;
+}
+
+function filterBeats(tag, btn) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  displayBeats = tag === 'all' ? [...BEATS] : BEATS.filter(b => b.tags.includes(tag) || b.genre === tag);
+  renderBeats(displayBeats);
+}
+
+function searchBeats(q) {
+  q = q.toLowerCase();
+  renderBeats(BEATS.filter(b => b.title.toLowerCase().includes(q) || b.artists.some(a => a.toLowerCase().includes(q)) || b.key.toLowerCase().includes(q) || String(b.bpm).includes(q)));
+}
+
+function sortBeats(val) {
+  const s = [...displayBeats];
+  if (val === 'newest') s.sort((a,b) => b.id - a.id);
+  else if (val === 'oldest') s.sort((a,b) => a.id - b.id);
+  else if (val === 'bpm-high') s.sort((a,b) => b.bpm - a.bpm);
+  else if (val === 'bpm-low') s.sort((a,b) => a.bpm - b.bpm);
+  renderBeats(s);
+}
+
+function openModal(title, licenseType, artists) {
+  const price = PRICES[licenseType];
+  const note = LABELS[licenseType] + ' - "' + title + '" - Prod. Voorhees';
+  document.getElementById('modal-title').textContent = title.toUpperCase();
+  document.getElementById('modal-license').textContent = LABELS[licenseType];
+  document.getElementById('modal-price').textContent = '$' + price;
+  document.getElementById('modal-terms').innerHTML = LICENSE_TERMS[licenseType];
+  document.getElementById('cashapp-link').href = 'https://cash.app/' + CASHAPP + '/' + price + '?note=' + encodeURIComponent(note);
+  document.getElementById('modal').classList.add('open');
+}
+
+function closeModal() { document.getElementById('modal').classList.remove('open'); }
+function closeModalOnOverlay(e) { if (e.target.id === 'modal') closeModal(); }
+function toggleFaq(el) { el.classList.toggle('open'); }
+
+function submitEmail() {
+  const v = document.getElementById('email-input').value;
+  if (!v || !v.includes('@')) return;
+  document.getElementById('email-success').style.display = 'block';
+  document.getElementById('email-input').value = '';
+}
+
+function submitPopupEmail() {
+  const v = document.getElementById('popup-email').value;
+  if (!v || !v.includes('@')) return;
+  document.getElementById('popup-success').style.display = 'block';
+  document.getElementById('popup-email').value = '';
+  setTimeout(closePopup, 2000);
+}
+
+function closePopup() { document.getElementById('email-popup').classList.remove('open'); }
+function closePopupOverlay(e) { if (e.target.id === 'email-popup') { closePopup(); } }
+
+setTimeout(function() {
+  try {
+    if (!localStorage.getItem('popup-dismissed')) {
+      document.getElementById('email-popup').classList.add('open');
+    }
+  } catch(e) {
+    document.getElementById('email-popup').classList.add('open');
+  }
+}, 12000);
+
+document.addEventListener('keydown', function(e) { if (e.key === 'Escape') { closeModal(); closePopup(); } });
+
+renderBeats(BEATS);
+</script>
+</body>
+</html>
